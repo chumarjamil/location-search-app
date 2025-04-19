@@ -1,0 +1,25 @@
+config:
+  target: 'http://localhost:8000'
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      name: Warm up
+    - duration: 120
+      arrivalRate: 10
+      rampTo: 50
+      name: Ramp up load
+    - duration: 60
+      arrivalRate: 50
+      name: Sustained load
+
+scenarios:
+  - name: "Search locations"
+    flow:
+      - get:
+          url: "/api/locations?search=ban"
+      - think: 1
+      - get:
+          url: "/api/locations?search=jakarta"
+      - think: 1
+      - get:
+          url: "/api/locations?search=surabaya" 
