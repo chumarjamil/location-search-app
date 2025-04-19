@@ -21,7 +21,21 @@ docker-compose up --build
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:8000/api/locations?search=ban
 
-### Features
+## Screenshots
+
+### Home Screen
+![Home Screen](screenshots/home.png)
+
+### Search Results
+![Search Results](screenshots/search.png)
+
+### Selected Location
+![Selected Location](screenshots/selected.png)
+
+### API Response
+![API Response](screenshots/api.png)
+
+## Features
 
 - Real-time search with 300ms debounce
 - Responsive search results in a dropdown
@@ -30,7 +44,7 @@ docker-compose up --build
 - Mobile-friendly UI with TailwindCSS
 - Loading indicator during search
 
-### Technologies
+## Technologies
 
 - **Backend**: PHP with a simple API endpoint
 - **Frontend**: React (Vite), TailwindCSS
