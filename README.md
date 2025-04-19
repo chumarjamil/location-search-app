@@ -46,6 +46,6 @@ docker-compose up --build
 
 ## Technologies
 
-- **Backend**: PHP with a simple API endpoint
+- **Backend**: Laravel
 - **Frontend**: React (Vite), TailwindCSS
 - **Deployment**: Docker + Docker Compose 
